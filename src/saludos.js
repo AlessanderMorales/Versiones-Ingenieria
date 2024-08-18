@@ -1,5 +1,5 @@
 
-
 document.getElementById('saludarBtn').addEventListener('click', function() {
-    document.getElementById('mensaje').textContent = 'Hola';
+    const nombre = prompt('¿Cuál es tu nombre?');
+    document.getElementById('mensaje').textContent = `Hola, ${nombre}`;
 });
