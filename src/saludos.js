@@ -2,6 +2,7 @@
 document.getElementById('saludarBtn').addEventListener('click', function() {
     const nombre = prompt('¿Cuál es tu nombre?');
     const genero = prompt('¿Cuál es tu género? (M/F)');
+    const edad = prompt('¿Cuál es tu edad?');
     let saludo;
 
     if (genero.toUpperCase() === 'M') {
@@ -11,6 +12,8 @@ document.getElementById('saludarBtn').addEventListener('click', function() {
     } else {
         saludo = `Hola, ${nombre}`;
     }
+
+    saludo += `, tienes ${edad} años.`;
 
     document.getElementById('mensaje').textContent = saludo;
 });
